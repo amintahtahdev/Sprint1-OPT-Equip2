@@ -1,0 +1,246 @@
+/* ========================================
+   VARIABLES Y RESET
+   ======================================== */
+
+:root {
+    --color-primary: #0c1943;
+    --color-secondary: #122769;
+    --color-accent: #1ea8b7;
+    --color-text: #333;
+    --color-bg: #ffffff;
+    --color-bg-alt: #f8f9fa;
+    --color-border: #e0e0e0;
+    --shadow-sm: 0 0 4px 2px rgba(0,0,0,0.05);
+    --transition: all 0.3s ease;
+    --border-radius: 8px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Segoe UI', Roboto;
+    line-height: 1.6;
+    color: var(--color-text);
+    background-color: var(--color-bg);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* ========================================
+   HEADER
+   ======================================== */
+
+header {
+    background-color: var(--color-primary);
+    color: white;
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+header a {
+    display: flex;
+    align-items: center;
+}
+
+header img {
+    height: 50px;
+    width: auto;
+    transition: var(--transition);
+}
+
+header img:hover {
+    transform: scale(1.05);
+}
+
+/* ========================================
+   NAVEGACIÓ
+   ======================================== */
+
+nav {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: var(--border-radius);
+    transition: var(--transition);
+    display: block;
+}
+
+nav a:hover {
+    background-color: var(--color-secondary);
+}
+
+/* ========================================
+   MAIN CONTENT
+   ======================================== */
+
+main {
+    flex: 1;
+    max-width: 1300px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+main h1 {
+    color: var(--color-primary);
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+}
+
+main h2 {
+    color: var(--color-primary);
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+main h3 {
+    color: var(--color-primary);
+    font-size: 1.25rem;
+    margin-top: 1.5rem;
+    margin-bottom: 0.75rem;
+}
+
+main p {
+    margin-bottom: 1rem;
+    color: var(--color-text);
+}
+
+section {
+    margin-bottom: 3rem;
+}
+
+article {
+    background-color: var(--color-bg-alt);
+    padding: 1.5rem;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-sm);
+    margin-bottom: 1.5rem;
+    transition: var(--transition);
+}
+
+
+
+/* ========================================
+   FOOTER
+   ======================================== */
+
+footer {
+    background-color: var(--color-primary);
+    color: white;
+    text-align: center;
+    padding: 1.5rem 2rem;
+    margin-top: auto;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.7rem;
+}
+
+/* ========================================
+   ELEMENTOS COMUNES
+   ======================================== */
+
+a {
+    color: var(--color-secondary);
+    transition: var(--transition);
+}
+
+a:hover {
+    color: var(--color-accent);
+}
+
+button {
+    background-color: var(--color-secondary);
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: var(--border-radius);
+    font-size: 1rem;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+button:hover {
+    background-color: var(--color-primary);
+    box-shadow: var(--shadow-sm);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* ========================================
+   RESPONSIVE
+   ======================================== */
+
+
+/* Responsive */
+@media (max-width: 480px) {
+    :root {
+        font-size: 14px;
+    }
+
+    header {
+        padding: 0.75rem;
+    }
+
+    header img {
+        height: 40px;
+    }
+
+    main {
+        padding: 1rem 0.75rem;
+    }
+
+    main h1 {
+        font-size: 1.5rem;
+    }
+
+    article {
+        padding: 1rem;
+    }
+
+    footer {
+        padding: 1rem;
+        font-size: 0.85rem;
+    }
+}
