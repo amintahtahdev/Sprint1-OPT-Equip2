@@ -142,18 +142,7 @@ main p {
 }
 
 section {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: stretch;
-    align-content: center;
-    padding: 1rem;
     margin: 3rem;
-
-    a {
-        text-decoration: none;
-    }
 }
 
 article {
@@ -162,10 +151,6 @@ article {
     border-radius: var(--border-radius);
     box-shadow: var(--shadow-sm);
     transition: var(--transition);
-
-    &:hover{
-        background-color: var(--color-accent);
-    }
 }
 
 
