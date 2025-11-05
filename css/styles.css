@@ -103,6 +103,31 @@ nav a:hover {
     background-color: var(--color-secondary);
 }
 
+
+nav li {
+    position: relative;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    background: #0c1943;
+    border-radius: 10px;
+    width: max-content;
+    min-width: 100%;
+    white-space: nowrap;
+}
+
+.submenu li {
+    display: block;
+    border-bottom: 1px solid rgb(95, 95, 95);
+    margin: 10px;
+}
+
+.dropdown:hover .submenu {
+    display: block;
+}
+
 /* ========================================
    MAIN CONTENT
    ======================================== */
@@ -142,7 +167,7 @@ main p {
 }
 
 section {
-    margin-bottom: 3rem;
+    margin: 3rem;
 }
 
 article {
@@ -150,7 +175,6 @@ article {
     padding: 1.5rem;
     border-radius: var(--border-radius);
     box-shadow: var(--shadow-sm);
-    margin-bottom: 1.5rem;
     transition: var(--transition);
 }
 
