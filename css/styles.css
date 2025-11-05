@@ -204,6 +204,7 @@ footer p {
 a {
     color: var(--color-secondary);
     transition: var(--transition);
+    text-decoration: none;
 }
 
 a:hover {
