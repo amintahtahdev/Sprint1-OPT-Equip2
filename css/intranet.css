@@ -1,0 +1,174 @@
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 70vh;
+    padding: 3rem 2rem;
+}
+
+main h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 2.5rem;
+    color: var(--color-primary);
+    position: relative;
+}
+
+main h1::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background-color: var(--color-accent);
+    border-radius: 2px;
+}
+
+form {
+    background-color: var(--color-bg-alt);
+    padding: 2.5rem;
+    border-radius: 2.5rem;
+    box-shadow: var(--shadow-sm);
+    width: 100%;
+    max-width: 450px;margin-bottom: 1.5rem;
+    border: 1px solid var(--color-borde);
+
+    label:nth-child(3) {
+        margin-top: 1.5rem;
+    }
+}
+
+label {
+    display: block;
+    margin-bottom: 0.3rem;
+    font-weight: 600;
+    color: var(--color-primary);
+    font-size: 0.95rem;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 0.5rem 0.5rem;
+    border: 2px solid var(--color-border);
+    border-radius: var(--border-radius);
+    font-size: 1rem;
+    transition: var(--transition);
+    background-color: var(--color-bg);
+    color: var(--color-text);
+
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+    outline: none;
+    border-color: var(--color-accent);
+    box-shadow: 0 0 0 3px rgba(30, 168, 183, 0.1);
+}
+
+button {
+    background-color: var(--color-secondary);
+    color: white;
+    border: none;
+    padding: 0.75rem 1rem;
+    border-radius: var(--border-radius);
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: var(--transition);
+    display: block;
+    margin: 0 auto;
+    min-width: 150px;
+}
+
+button:hover {
+    background-color: var(--color-accent);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15)
+}
+
+input:invalid {
+    border-color: #e74c3c;
+}
+
+
+@media (max-width: 768px) {
+    main {
+        padding: 2rem 1rem;         /* 🛡️ REDUÏM L'ESPAI INTERN: 32px amunt/avall, 16px costats */
+        min-height: 60vh;           /* 📏 MENYS ALTURA MÍNIMA: 60% en comptes de 70% */
+    }
+    
+    main h1 {
+        font-size: 2rem;            /* 🔠 MIDA DE TÍTOL MÉS PETITA: 32px en comptes de 40px */
+        margin-bottom: 2rem;        /* ⬇️ MENYS ESPAI SOTA EL TÍTOL: 32px en comptes de 40px */
+    }
+    
+    form {
+        padding: 2rem;              /* 🛡️ MENYS ESPAI INTERN AL FORMULARI: 32px en comptes de 40px */
+        margin-bottom: 1rem;        /* ⬇️ MENYS ESPAI SOTA EL FORMULARI: 16px en comptes de 24px */
+    }
+    
+    button {
+        width: 100%;                /* 📏 BOTÓ OCUPA TOTA L'AMPLE DISPONIBLE */
+        max-width: 200px;           /* 📏 PERÒ NO MÉS DE 200px D'AMPLE */
+    }
+}
+
+@media (max-width: 480px) {
+    main {
+        padding: 1.5rem 0.75rem;    /* 🛡️ ENCARA MENYS ESPAI: 24px amunt/avall, 12px costats */
+    }
+    
+    main h1 {
+        font-size: 1.75rem;         /* 🔠 TÍTOL ENCARA MÉS PETIT: 28px */
+        margin-bottom: 1.5rem;      /* ⬇️ MENYS ESPAI: 24px */
+    }
+    
+    form {
+        padding: 1.5rem;            /* 🛡️ FORMULARI AMB MENYS ESPAI INTERN: 24px */
+    }
+    
+    input[type="text"],
+    input[type="email"],
+    input[type="password"] {
+        padding: 0.65rem 0.85rem;   /* 🛡️ MENYS ESPAI DINS DELS INPUTS: 10.4px 13.6px */
+    }
+    
+    button {
+        padding: 0.65rem 1.5rem;    /* 🛡️ MENYS ESPAI AL BOTÓ: 10.4px amunt/avall, 24px costats */
+        font-size: 1rem;            /* 🔠 TEXT MÉS PETIT AL BOTÓ: 16px */
+    }
+}
+
+button:disabled {
+    background-color: #bdc3c7;
+    cursor: not-allowed;
+    transform: none;
+    box-shadow: none;
+}
+
+button:focus-visible,
+input:focus-visible {
+    outline: 2px solid var(--color-accent);
+    outline-offset: 2px;
+}
+
+form {
+    animation: fadeInUp 0.6s ease-out;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
