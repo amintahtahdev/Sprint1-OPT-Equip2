@@ -1,26 +1,9 @@
-nav li {
-  position: relative;
+section {
+    text-align: center;      
+    
+    img {
+        display: block;
+        margin: 0 auto;
+        border-radius: 10px;
+    }
 }
-
-.submenu {
-  display: none;
-  position: absolute;
-  background: #0c1943;
-  border-radius: 10px;
-  width: max-content;
-  min-width: 100%;
-  white-space: nowrap;
-}
-
-.submenu li {
-  display: block;
-  border-bottom: 1px solid rgb(95, 95, 95);
-  margin: 10px;
-}
-
-.dropdown:hover .submenu {
-  display: block;
-}
-
-
-
