@@ -8,3 +8,25 @@
     width: 100%;
     border-radius: 20px;
 }
+
+
+.contenedor {
+    display: flex;
+    flex-wrap: wrap;       /* Permite que los elementos bajen a la siguiente fila */
+    gap: 10px;             /* Espacio entre los cuadros */
+    justify-content: center;
+    align-content: center;
+    border-radius: 0px;
+    box-shadow: 0 0 0px 0px;
+    h2 {
+        font-size: 30px;
+    }
+}
+
+.item {
+    flex: 1 0 45%;         /* Cada cuadro ocupa aproximadamente la mitad del contenedor (2 columnas) */
+    height: 45%;           /* Altura aproximada de cada cuadro */
+    display: flex;
+    flex-direction: column;
+}
+
