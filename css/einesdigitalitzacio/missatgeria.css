@@ -18,9 +18,6 @@
     align-content: center;
     border-radius: 0px;
     box-shadow: 0 0 0px 0px;
-    h2 {
-        font-size: 30px;
-    }
 }
 
 .item {
@@ -30,3 +27,17 @@
     flex-direction: column;
 }
 
+#missatgeria {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    div {
+        border-radius: 100%;
+    
+    &:hover {
+        background-color: antiquewhite;
+    }
+
+    }
+}
