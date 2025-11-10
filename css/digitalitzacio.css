@@ -1,0 +1,19 @@
+#h1_digi {
+    color: var(--color-primary);
+    text-align: center;
+    
+}
+
+#nav_digi {
+    display: flex;
+    justify-content: space-around;
+
+    a {
+        color: var(--color-primary);
+
+        &:hover {
+            background-color: white;
+            color: var(--color-accent);
+        }
+    }
+}
