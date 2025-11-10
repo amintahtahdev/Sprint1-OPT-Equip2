@@ -172,6 +172,16 @@ footer p {
     font-size: 0.7rem;
 }
 
+footer a {
+    color: var(--color-accent);
+    text-decoration: none;
+    margin: 0;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
 /* ========================================
    ELEMENTOS COMUNES
    ======================================== */
