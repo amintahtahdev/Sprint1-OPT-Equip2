@@ -31,24 +31,70 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+}
 
-    .chevron {
-        width: 50px;
-        height: 50px;
-        border-radius: 100%;             /* gris fosc elegant */
-        color: white;                  /* el SVG hereta el color */
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        cursor: pointer;
-    }
+.chevron {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;             /* gris fosc elegant */
+    color: white;                  /* el SVG hereta el color */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
 
-    &:hover {
-        background-color: rgb(160, 160, 160);
-    }
+.chevron:hover {
+    background-color: rgb(160, 160, 160);
+}
 
-    svg {
-        width: 50px;
-        height: 50px;
-    }
+svg {
+    width: 50px;
+    height: 50px;
+}
+
+
+/* Missatgeria dos FLEX */
+
+#missatgeria2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+.contenedor_m2{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.marro1 {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.marro2 {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.item2_marro_blau {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.item2_marro_blau_rosa {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.item3_marro_blau {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
