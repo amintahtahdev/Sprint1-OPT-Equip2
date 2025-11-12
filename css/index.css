@@ -1,5 +1,13 @@
-/* cANVIAR A FLEXBOX */
+
+article {
+    background-color: var(--color-bg-alt);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-sm);
+    transition: var(--transition);
+}
+
 section {
+    margin: 3rem;
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;

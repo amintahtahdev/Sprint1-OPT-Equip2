@@ -141,18 +141,6 @@ main p {
     color: var(--color-text);
 }
 
-section {
-    margin: 3rem;
-}
-
-article {
-    background-color: var(--color-bg-alt);
-    padding: 1.5rem;
-    border-radius: var(--border-radius);
-    box-shadow: var(--shadow-sm);
-    transition: var(--transition);
-}
-
 
 
 /* ========================================
@@ -188,7 +176,6 @@ footer a:hover {
 
 a {
     color: var(--color-secondary);
-    transition: var(--transition);
     text-decoration: none;
 }
 
