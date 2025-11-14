@@ -2,9 +2,10 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    min-height: 70vh;
+    justify-content: flex-start;
     padding: 3rem 2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 
 main h1 {
@@ -30,15 +31,16 @@ main h1::after {
 form {
     background-color: var(--color-bg-alt);
     padding: 2.5rem;
-    border-radius: 2.5rem;
+    border-radius: var(--border-radius);
     box-shadow: var(--shadow-sm);
     width: 100%;
-    max-width: 450px;margin-bottom: 1.5rem;
-    border: 1px solid var(--color-borde);
+    max-width: 450px;
+    margin-bottom: 1.5rem;
+    border: 1px solid var(--color-border);
+}
 
-    label:nth-child(3) {
-        margin-top: 1.5rem;
-    }
+form label:nth-child(3) {
+    margin-top: 1.5rem;
 }
 
 label {
@@ -53,14 +55,13 @@ input[type="text"],
 input[type="email"],
 input[type="password"] {
     width: 100%;
-    padding: 0.5rem 0.5rem;
+    padding: 0.75rem 1rem;
     border: 2px solid var(--color-border);
     border-radius: var(--border-radius);
     font-size: 1rem;
     transition: var(--transition);
     background-color: var(--color-bg);
     color: var(--color-text);
-
 }
 
 input[type="text"]:focus,
@@ -75,7 +76,7 @@ button {
     background-color: var(--color-secondary);
     color: white;
     border: none;
-    padding: 0.75rem 1rem;
+    padding: 0.75rem 2rem;
     border-radius: var(--border-radius);
     font-size: 1.1rem;
     font-weight: 600;
@@ -89,59 +90,78 @@ button {
 button:hover {
     background-color: var(--color-accent);
     transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15)
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
 input:invalid {
     border-color: #e74c3c;
 }
 
+/* NOU: Estils per als enllaços de intranet */
+.intranet-links {
+    text-align: center;
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.intranet-links a {
+    color: var(--color-secondary);
+    text-decoration: none;
+    font-size: 0.9rem;
+    margin: 0 0.5rem;
+    transition: var(--transition);
+}
+
+.intranet-links a:hover {
+    color: var(--color-accent);
+    text-decoration: underline;
+}
 
 @media (max-width: 768px) {
     main {
-        padding: 2rem 1rem;         /* 🛡️ REDUÏM L'ESPAI INTERN: 32px amunt/avall, 16px costats */
-        min-height: 60vh;           /* 📏 MENYS ALTURA MÍNIMA: 60% en comptes de 70% */
+        padding: 2rem 1rem;
+        min-height: 60vh;
     }
     
     main h1 {
-        font-size: 2rem;            /* 🔠 MIDA DE TÍTOL MÉS PETITA: 32px en comptes de 40px */
-        margin-bottom: 2rem;        /* ⬇️ MENYS ESPAI SOTA EL TÍTOL: 32px en comptes de 40px */
+        font-size: 2rem;
+        margin-bottom: 2rem;
     }
     
     form {
-        padding: 2rem;              /* 🛡️ MENYS ESPAI INTERN AL FORMULARI: 32px en comptes de 40px */
-        margin-bottom: 1rem;        /* ⬇️ MENYS ESPAI SOTA EL FORMULARI: 16px en comptes de 24px */
+        padding: 2rem;
+        margin-bottom: 1rem;
     }
     
     button {
-        width: 100%;                /* 📏 BOTÓ OCUPA TOTA L'AMPLE DISPONIBLE */
-        max-width: 200px;           /* 📏 PERÒ NO MÉS DE 200px D'AMPLE */
+        width: 100%;
+        max-width: 200px;
     }
 }
 
 @media (max-width: 480px) {
     main {
-        padding: 1.5rem 0.75rem;    /* 🛡️ ENCARA MENYS ESPAI: 24px amunt/avall, 12px costats */
+        padding: 1.5rem 0.75rem;
     }
     
     main h1 {
-        font-size: 1.75rem;         /* 🔠 TÍTOL ENCARA MÉS PETIT: 28px */
-        margin-bottom: 1.5rem;      /* ⬇️ MENYS ESPAI: 24px */
+        font-size: 1.75rem;
+        margin-bottom: 1.5rem;
     }
     
     form {
-        padding: 1.5rem;            /* 🛡️ FORMULARI AMB MENYS ESPAI INTERN: 24px */
+        padding: 1.5rem;
     }
     
     input[type="text"],
     input[type="email"],
     input[type="password"] {
-        padding: 0.65rem 0.85rem;   /* 🛡️ MENYS ESPAI DINS DELS INPUTS: 10.4px 13.6px */
+        padding: 0.65rem 0.85rem;
     }
     
     button {
-        padding: 0.65rem 1.5rem;    /* 🛡️ MENYS ESPAI AL BOTÓ: 10.4px amunt/avall, 24px costats */
-        font-size: 1rem;            /* 🔠 TEXT MÉS PETIT AL BOTÓ: 16px */
+        padding: 0.65rem 1.5rem;
+        font-size: 1rem;
     }
 }
 
@@ -172,3 +192,4 @@ form {
         transform: translateY(0);
     }
 }
+
