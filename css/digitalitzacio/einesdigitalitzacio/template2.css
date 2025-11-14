@@ -1,0 +1,48 @@
+
+.block-page {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.block-main{
+    display: flex;
+    flex-direction: column;
+}
+
+.block-content-dalt {
+    display: flex;
+    flex-direction: column;
+}
+
+.content-dalt {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.block-content-baix {
+    display: flex;
+    flex-direction: row;
+}
+
+.content-baix-title {
+    justify-content: center;
+}
+
+.content-baix{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.content-baix-aside {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.p-de {
+    background-color: #f5eee8;
+    padding: 1rem;
+}

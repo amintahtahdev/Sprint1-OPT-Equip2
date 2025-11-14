@@ -1,0 +1,10 @@
+.chevron {
+    cursor: pointer;
+    padding: 0.5rem;
+    margin: 1rem;
+    border-radius: 50%;
+}
+
+.chevron:hover {
+    background-color: rgba(151, 151, 151, 0.589);
+}
