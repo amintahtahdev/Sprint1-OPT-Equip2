@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="/css/styles.css">
 
     <!-- Estils específics de la pàgina -->
-    <link rel="stylesheet" href="/css/digitalitzacio/digitalitzacio.css">
+    <link rel="stylesheet" href="/css/digitalitzacio/contactes.css">
 
     <!-- Components JavaScript -->
     <script src="/js/include.js" defer></script>
@@ -44,54 +44,31 @@
                 <div><a href="">X</a></div>
                 <div><a href="/pages/digitalitzacio/suggeriments.html">Sugeriments</a></div>
                 <div><a href="/pages/digitalitzacio/contactes.html">Contacte</a></div>
+                
             </nav>
         </div>
         <hr>
     
-    <!-- INTRODUCCIÓ -->
-    <section id="introduccio">
-        <article>
-            <p>
-                La digitalització és una oportunitat per fer créixer les empreses del Montsià. 
-                Aquest espai vol oferir recursos, eines i exemples pràctics per ajudar-te a incorporar 
-                la tecnologia al teu negoci d’una manera senzilla i efectiva.
-            </p>
-        </article>
-    </section>
+        <section>
+            <form action="#" method="post">
+                <label for="nom">Nom</label>
+                <input type="text" id="nom" name="nom" required>
 
-    <!-- AVANTATGES -->
-    <section id="avantatges">
-        <h2>Avantatges de la digitalització</h2>
-        <article>
-            <p>
-                Els negocis locals juguen un paper clau a la nostra economia. 
-                La digitalització permet:
-            </p>
-            <ul>
-                <li>Millorar la relació amb la clientela.</li>
-                <li>Augmentar la visibilitat en línia.</li>
-                <li>Simplificar processos de gestió.</li>
-                <li>Promoure valors de sostenibilitat i innovació.</li>
-            </ul>
-        </article>
-    </section>
+                <label for="correu">Correu electrònic</label>
+                <input type="email" id="correu" name="correu" required>
 
-    <!-- PROJECTE MONTSIÀ30 -->
-    <section id="projecte">
-        <h2>Projecte Montsià30</h2>
-        <article>
-            <p>
-                Montsià30 és una associació d'empreses de la comarca del Montsià que treballa per impulsar 
-                la digitalització de les PIMEs i afavorir el compliment dels Objectius de Desenvolupament 
-                Sostenible (ODS).
-            </p>
-            <p>
-                Aquest web és una iniciativa per donar suport a empreses i professionals que vulguin 
-                millorar la seva presència digital i adoptar eines que facilitin la seva transformació tecnològica.
-            </p>
-        </article>
-    </section>
-    
+                <label for="assumpte">Assumpte</label>
+                <input type="text" id="assumpte" name="assumpte" required>
+
+                <label for="missatge">Missatge</label>
+                <textarea id="missatge" name="missatge" rows="5" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+
+
+        </section>
+
     </main>
 
     <!-- PEU DE PÀGINA -->
