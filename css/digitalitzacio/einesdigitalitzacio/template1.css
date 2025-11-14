@@ -1,0 +1,32 @@
+/* Los Chevron al costat del contingut */
+main section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+/* Modifico el segon article amb tot el contingut */
+/* el segon article del primer section */
+main section:nth-of-type(2) {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Agafo el segon fill de article que es el primer
+ja que antes tenim el h2 */
+/* el sections dins del segon article que engloba tot el contingut menos el titul de h2 */
+main section:nth-of-type(2) article:nth-of-type(2) {
+    display: flex;
+    flex-direction: row;
+}
+
+/* Agafo el tercer fill de article que es el segon section */
+main section:nth-of-type(2) article:nth-of-type(2) section:nth-of-type(1) {
+    display: flex;
+    flex-direction: column;
+}
+
+main section:nth-of-type(2) article:nth-of-type(2) section:nth-of-type(2) {
+    display: flex;
+    flex-direction: column;
+}
