@@ -1,0 +1,10 @@
+.block-page {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.block-main {
+    display: flex;
+    flex-direction: column;
+}
