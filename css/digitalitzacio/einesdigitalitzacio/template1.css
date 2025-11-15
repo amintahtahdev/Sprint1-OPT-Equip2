@@ -13,17 +13,42 @@
 .block-content {
     display: flex;
     flex-direction: row;
-    gap: 2rem;
+    justify-content: center;
+    align-items: stretch;
+    gap: 3rem;
+    height: 100%;
 }
 
 .block-iz {
     display: flex;
     flex-direction: column;
+    width: 50%;
+    height: 100%;
+}
+
+.block-iz .content {
+    font-size: medium;
+}
+
+.block-iz img {
+    margin-top: 2.5rem;
+    width: 100%;
 }
 
 .block-de {
     display: flex;
     flex-direction: column;
+    width: 85%;
+    height: 100%;
+}
+
+.block-de .content {
+    font-size: small;
+}
+
+.block-de img {
+    width: 100%;
+    height: 30%;
 }
 
 .content {

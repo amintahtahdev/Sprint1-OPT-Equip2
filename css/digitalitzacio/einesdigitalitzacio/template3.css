@@ -1,0 +1,129 @@
+.block-page {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.block-main {
+    display: flex;
+    flex-direction: column;
+}
+
+.block-content {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+.block-content-iz {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 0.6rem;
+}
+
+.content-iz-dalt {
+    display: flex;
+    flex-direction: column;
+}
+
+.content-iz-dalt h4 {
+    background-color: #c7a27d;
+    color: white;
+    padding-left: 1rem;
+    margin-bottom: 0.2rem;
+}
+
+.content-iz-dalt article{
+    background-color: #f5eee8;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 0.5rem;
+}
+
+.content-iz-dalt article p {
+    font-size: small;
+    margin: 0;
+}
+
+.content-iz-dalt article a {
+    background-color: white;
+    color: #0563c1;
+    text-decoration: underline;
+}
+
+.content-iz-dalt article > :nth-child(2),
+.content-iz-dalt article > :nth-child(3),
+.content-iz-dalt article > :nth-child(4) {
+    margin-top: 1rem;
+}
+
+.content-iz-baix {
+    display: flex;
+    flex-direction: column;
+}
+
+.content-iz-baix h4 {
+    background-color: #c7a27d;
+    color: white;
+    padding-left: 1rem;
+    margin-bottom: 0.2rem;
+}
+
+.content-iz-baix article{
+    background-color: #f5eee8;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 0.5rem;
+}
+
+.content-iz-baix article p {
+    font-size: small;
+    margin: 0;
+}
+
+.content-iz-baix article > :nth-child(2),
+.content-iz-baix article > :nth-child(3),
+.content-iz-baix article > :nth-child(4) {
+    margin-top: 1rem;
+}
+
+.block-content-de {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    font-size: small;
+}
+
+.block-content-de img {
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.block-content-de p {
+    margin-bottom: 0.5rem;
+}
+
+.block-content-de li{
+    text-indent: 20px;
+    list-style: none;
+    font-weight: bold;
+}
+
+.block-content-de small {
+    margin-top: 0.3rem;
+    font-style: italic;
+    font-size: x-small;
+}
+
+.block-content-de a {
+    text-decoration: underline;
+    color: black;
+    font-size: x-small;
+}
+
+.block-content-de a:hover {
+    color: black;
+}
