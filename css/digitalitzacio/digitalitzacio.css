@@ -41,3 +41,7 @@
 hr {
 margin-bottom: 25px;
 }
+
+#avantatges ul{
+    list-style-position: inside;
+}

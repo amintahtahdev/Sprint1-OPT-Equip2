@@ -8,3 +8,7 @@
 .chevron:hover {
     background-color: rgba(151, 151, 151, 0.589);
 }
+
+main {
+    display: flex;
+}
