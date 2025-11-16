@@ -12,15 +12,6 @@ Aquesta primera entrega correspon al **Sprint 1**, seguint la metodologia Agile.
 
 ---
 
-## 📌 Objectius del projecte
-
-* Crear una web corporativa visualment atractiva i fàcilment reaprofitada per altres associacions.
-* Facilitar informació sobre **digitalització** i **sostenibilitat**.
-* Proporcionar una **intranet** per a treballadors de Montsià30 amb diferents eines i formularis.
-* Fer el contingut editable i el codi mantenible.
-
----
-
 ## 🚀 Estat actual del desenvolupament (Sprint 1)
 
 El projecte es troba en la seva primera versió funcional. En aquest sprint s’han completat les següents parts:
@@ -50,83 +41,16 @@ El projecte es troba en la seva primera versió funcional. En aquest sprint s’
   * Contrasenya segura (8+ caràcters, majúscules, minúscules i símbols).
   * Usuari amb correu del domini *@montsia30.net*.
 * **Pàgina de login** (sense validació real d’usuari en aquest sprint).
-* **Llistat d’empreses** extret de fitxers XML.
 * Accés a cada empresa i desplegable de tipus d’enquesta.
-* Formulari d’autodiagnosi del sector comercial.
-
-### 🕒 Pendent per futurs sprints
-
-* Detall complet de la secció Sostenibilitat.
-* Enquestes de sostenibilitat.
-* Filtrat, ordenació i anàlisi avançada de dades.
-* Implementació completa de la seguretat i validació d’usuari.
-
----
 
 ## 🛠️ Tecnologies utilitzades
 
 * **HTML semàntic**
 * **CSS extern** amb estils unificats
 * **JavaScript** per integrar capçalera, peu i contingut dinàmic
-* **XML** per emmagatzemar empreses i respostes d’enquestes
 * **Visual Studio Code** (IDE)
 * **GitHub** (CVS)
-* Servidor de testeig de Virtualiogs
-
----
-
-## 📁 Estructura del projecte
-
-```
-/projecte-montsiatech
-│ index.html
-│ digitalitzacio.html
-│ sostenibilitat.html (pendent)
-│ intranet/
-│    ├─ login.html
-│    ├─ registre.html
-│    ├─ empreses.html
-│    └─ enquesta.html
-│
-├─ components/
-│    ├─ header.html
-│    └─ footer.html
-│
-├─ css/
-│    └─ styles.css
-│
-├─ js/
-│    └─ main.js
-│
-├─ data/
-│    ├─ empreses.xml
-│    └─ respostes.xml
-```
-
----
-
-## 📄 Documents de referència
-
-* Guia Digitalització Amposta (carrusel): disponible a l’enunciat.
-* Enquesta d’autodiagnosi: [https://ccam.gencat.cat/ca/serveis/autodiagnosi/](https://ccam.gencat.cat/ca/serveis/autodiagnosi/)
-* Requeriments complets del projecte: (veure documentació del centre).
-
----
-
-## 🤝 Equip i metodologia
-
-* Projecte desenvolupat per l’equip de MontsiTech (estudiants de l’IES Montsià).
-* Metodologia **Agile**, treball organitzat per *Sprints*.
-* Aquest repositori mostra el progrés del **Sprint 1**.
-
----
-
-## 🔄 Properes passes
-
-* Completar continguts de Sostenibilitat.
-* Ampliar funcionalitats de la intranet.
-* Sistema complet d’anàlisi i estadístiques.
-* Pla d’accessibilitat i millora UX/UI.
+* **Server**
 
 ---
 
@@ -137,3 +61,4 @@ Aquest projecte està en desenvolupament contínu. El README s’actualitzarà a
 ---
 
 **© 2025 MontsiTech – Projecte educatiu IES Montsià**
+
