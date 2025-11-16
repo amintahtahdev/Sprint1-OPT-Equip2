@@ -42,12 +42,32 @@ hr {
 margin-bottom: 25px;
 }
 
+.contact-section {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.contact-image {
+    flex: 1;
+}
+
+.contact-image img {
+    width: 100%;
+    height: auto;
+    border-radius: var(--border-radius);
+    object-fit: cover;
+}
+
 form {
-    width: 400px;
-    margin: 0 auto;
+    flex: 1;
+    min-width: 50%;
+}
+
+form > div {
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    gap: 4px;
 }
 
 label {
@@ -62,13 +82,10 @@ input, textarea, button {
     font-size: 16px;
 }
 
-textarea {
-    min-height: 120px;
-}
-
 button {
     cursor: pointer;
     padding: 12px;
+    margin-top: 20px;
 }
 
 form {
