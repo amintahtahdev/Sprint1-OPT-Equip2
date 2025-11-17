@@ -56,7 +56,7 @@ El projecte es troba en la seva primera versió funcional. En aquest sprint s’
 
 ## Doc
 
-> 📎 [Diseny de la Web]([https://docs.github.com/](https://github.com/amintahtahdev/Sprint1-OPT-Equip2/blob/main/doc/Monstsi%C3%A130.png)
+> 📎 [Diseny de la Web](https://github.com/amintahtahdev/Sprint1-OPT-Equip2/blob/main/doc/Monstsi%C3%A130.png)
 
 ---
 
