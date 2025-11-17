@@ -193,3 +193,26 @@ form {
     }
 }
 
+/* Estils per a la validació HTML5 */
+.help-text {
+    font-size: 0.8rem;
+    color: #666;
+    margin-top: 0.25rem;
+    display: block;
+}
+
+/* Estil per camps vàlids */
+input:valid {
+    border-color: #27ae60;
+}
+
+/* Estil per camps invàlids quan perden el focus */
+input:invalid:not(:focus):not(:placeholder-shown) {
+    border-color: #e74c3c;
+    background-color: #fdf2f2;
+}
+
+/* Millora l'espaiat dels form-groups */
+.form-group {
+    margin-bottom: 1.5rem;
+}

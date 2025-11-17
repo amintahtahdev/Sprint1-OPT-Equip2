@@ -1,52 +1,112 @@
 <html lang="cat">
 <head>
     <meta charset="UTF-8">
-
-    <!-- Títol de la pàgina -->
     <title>Registre | Montsià30</title>
-
-    <!-- Estils generals-->
     <link rel="stylesheet" href="/css/styles.css">
-
-    <!-- Estils específics de la pàgina -->
     <link rel="stylesheet" href="/css/intranet.css">
-
-    <!-- Components JavaScript -->
     <script src="/js/include.js" defer></script>
-
-    <!-- Favicon -->
     <link rel="icon" type="image/png" href="/assets/img/favicon.ico">
 </head>
 <body>
     
-    <!-- CAPSALERA -->
     <header></header>
 
-    <!-- CONTINGUT PRINCIPAL -->
     <main>
         <h1>Registre</h1>
-        <form>
-            <label>Nom complet:</label>
-            <input type="text">
+        <form id="formRegistre">
+            <div class="form-group">
+                <label for="nom">Nom complet:</label>
+                <input type="text" id="nom" name="nom" required>
+            </div>
 
-            <label>Correu Electrònic:</label>
-            <input type="text">
+            <div class="form-group">
+                <label for="email">Correu Electrònic:</label>
+                <input type="text" id="email" name="email" required>
+                <small class="help-text">Ha de ser del domini @montsia30.net</small>
+                <div id="error-email" class="error-message" style="display: none;"></div>
+            </div>
 
-            <label>Contrasenya:</label>
-            <input type="password">
+            <div class="form-group">
+                <label for="password">Contrasenya:</label>
+                <input type="password" id="password" name="password" required>
+                <small class="help-text">Mínim 8 caràcters, majúscules, minúscules i números</small>
+                <div id="error-password" class="error-message" style="display: none;"></div>
+            </div>
 
-            <label>Repeteix la contrasenya:</label>
-            <input type="password">
+            <div class="form-group">
+                <label for="confirmPassword">Repeteix la contrasenya:</label>
+                <input type="password" id="confirmPassword" name="confirmPassword" required>
+                <div id="error-confirm" class="error-message" style="display: none;"></div>
+            </div>
+
+            <button type="button" onclick="validarFormulari()">Registra't</button>
         </form>
-        <button>Registra't</button>
         
-        <!-- ENLLAÇ PER TORNAR A LOGIN -->
         <div class="intranet-links">
-            <a href="/pages/intranet.html">← Tornar a Iniciar Sessió</a>
+            <a href="/pages/login.html">← Tornar a Iniciar Sessió</a>
         </div>
     </main>
 
-    <!-- PEU DE PÀGINA -->
     <footer></footer>
+
+    <script>
+    function validarFormulari() {
+        var email = document.getElementById('email').value;
+        var password = document.getElementById('password').value;
+        var confirmPassword = document.getElementById('confirmPassword').value;
+        var valid = true;
+        
+        // Amagar errors anteriors
+        document.querySelectorAll('.error-message').forEach(function(el) {
+            el.style.display = 'none';
+        });
+        
+        // Validar email
+        var parts = email.split('@');
+        if (parts.length !== 2 || parts[1] !== 'montsia30.net') {
+            document.getElementById('error-email').textContent = 'ERROR: El correu ha de ser del domini @montsia30.net (exemple: usuari@montsia30.net)';
+            document.getElementById('error-email').style.display = 'block';
+            valid = false;
+        }
+        
+        // Validar contrasenya - COMPLETA
+        var errorsContrasenya = [];
+        
+        if (password.length < 8) {
+            errorsContrasenya.push('mínim 8 caràcters');
+        }
+        
+        if (!/[a-z]/.test(password)) {
+            errorsContrasenya.push('almenys una minúscula');
+        }
+        
+        if (!/[A-Z]/.test(password)) {
+            errorsContrasenya.push('almenys una majúscula');
+        }
+        
+        if (!/[0-9]/.test(password)) {
+            errorsContrasenya.push('almenys un número');
+        }
+        
+        if (errorsContrasenya.length > 0) {
+            document.getElementById('error-password').textContent = 'ERROR: La contrasenya ha de tenir: ' + errorsContrasenya.join(', ');
+            document.getElementById('error-password').style.display = 'block';
+            valid = false;
+        }
+        
+        // Validar que les contrasenyes coincideixin
+        if (password !== confirmPassword) {
+            document.getElementById('error-confirm').textContent = 'ERROR: Les contrasenyes no coincideixen';
+            document.getElementById('error-confirm').style.display = 'block';
+            valid = false;
+        }
+        
+        if (valid) {
+            alert('Registre completat amb èxit! Ara seràs redirigit a la intranet.');
+            // Redirigir a la pàgina de la intranet
+            window.location.href = '/pages/intranet.html';
+        }
+    }
+    </script>
 </body>
 </html>
