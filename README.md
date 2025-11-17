@@ -56,7 +56,7 @@ El projecte es troba en la seva primera versió funcional. En aquest sprint s’
 
 ## Doc
 
-> 📎 [Diseny de la Web]([https://docs.github.com/](https://github.com/amintahtahdev/Sprint1-OPT-Equip2/blob/main/doc/Monstsi%C3%A130.png))
+> 📎 [Diseny de la Web]([https://docs.github.com/](https://github.com/amintahtahdev/Sprint1-OPT-Equip2/blob/main/doc/Monstsi%C3%A130.png)
 
 ---
 
@@ -67,5 +67,6 @@ Aquest projecte està en desenvolupament contínu. El README s’actualitzarà a
 ---
 
 **© 2025 MontsiTech – Projecte educatiu IES Montsià**
+
 
 
