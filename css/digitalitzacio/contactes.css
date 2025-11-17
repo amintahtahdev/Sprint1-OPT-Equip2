@@ -98,3 +98,19 @@ form {
     margin-bottom: 1.5rem;
     border: 1px solid var(--color-border);
 }
+
+
+@media (max-width: 768px) {
+    .contact-section {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+    
+    .contact-image {
+        width: 100%;
+    }
+    
+    form {
+        max-width: 100%;
+    }
+}
