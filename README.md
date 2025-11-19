@@ -66,7 +66,14 @@ Aquest projecte està en desenvolupament contínu. El README s’actualitzarà a
 
 ---
 
+## Link al Github del Projecte
+
+> 📎 [Sprint1-OPT-Equip2](https://github.com/amintahtahdev/Sprint1-OPT-Equip2)
+
+---
+
 **© 2025 MontsiTech – Projecte educatiu IES Montsià**
+
 
 
 
