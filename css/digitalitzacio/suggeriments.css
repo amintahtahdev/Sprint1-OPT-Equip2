@@ -1,122 +1,85 @@
 #h1_digi {
-    color: var(--color-primary);
-    text-align: center;
-    
+    color: var(--color-primary); /* Aplica el color principal a l’h1 amb id h1_digi */
+    text-align: center;           /* Centra el text */
 }
-
-/* #nav_digi {
-    display: flex;
-    justify-content: space-around;
-
-    a {
-        color: var(--color-primary);
-
-        &:hover {
-            background-color: white;
-            color: var(--color-accent);
-        }
-    }
-}
-
-.dropdown {
-    position: relative;
-    display: inline-block;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 300px;
-}
-
-.dropdown-content a {
-    padding: 12px 16px;
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
-hr {
-margin-bottom: 25px;
-} */
 
 .suggestion-section {
-    display: flex;
-    gap: 2rem;
-    align-items: flex-start;
-    margin-bottom: 2rem;
+    display: flex;                /* Mostra els elements interns en fila */
+    gap: 2rem;                    /* Separació de 2rem entre elements fills */
+    align-items: flex-start;      /* Alinea els elements a l’inici de l’eix vertical */
+    margin-bottom: 2rem;          /* Espai inferior de 2rem respecte altres elements */
 }
 
 .suggestion-image {
-    flex: 1;
-    min-width: 300px;
+    flex: 1;                      /* Permet que la imatge ocupi l’espai disponible proporcional */
+    min-width: 300px;             /* Amplada mínima de la imatge */
 }
 
 .suggestion-image img {
-    width: 100%;
-    height: auto;
-    border-radius: var(--border-radius);
-    object-fit: cover;
+    width: 100%;                  /* L’amplada de la imatge s’adapta al contenidor */
+    height: auto;                 /* L’altura s’ajusta proporcionalment */
+    border-radius: var(--border-radius); /* Arrodoneix les cantonades segons la variable definida */
+    object-fit: cover;            /* Ajusta la imatge per omplir el contenidor sense deformar-la */
 }
 
 form {
-    flex: 1;
-    min-width: 300px;
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
+    flex: 1;                      /* El formulari ocupa l’espai restant proporcionalment */
+    min-width: 300px;             /* Amplada mínima del formulari */
+    display: flex;                /* Mostra els elements interns com flex */
+    flex-direction: column;       /* Els elements interns es col·loquen verticalment */
+    gap: 12px;                    /* Separació de 12px entre elements interns */
 }
 
 form > div {
-    display: flex;
-    flex-direction: column;
-    gap: 4px;
+    display: flex;                /* Cada div intern del formulari és flex */
+    flex-direction: column;       /* Elements interns es col·loquen en columna */
+    gap: 4px;                     /* Espai de 4px entre cada element */
 }
 
 label {
-    text-align: left;
+    text-align: left;             /* Alinea el text de l’etiqueta a l’esquerra */
 }
 
 input, textarea, button, select {
-    width: 100%;
-    border-radius: 5px;
-    border-width: 1px;
-    padding: 12px;
-    font-size: 16px;
+    width: 100%;                  /* Elements ocupen tota l’amplada del contenidor */
+    border-radius: 5px;           /* Cantonades lleugerament arrodonides */
+    border-width: 1px;            /* Gruix de la línia del border */
+    padding: 12px;                /* Espai intern de 12px */
+    font-size: 16px;              /* Mida del text */
 }
 
 button {
-    cursor: pointer;
-    padding: 12px;
-    margin-top: 20px;
+    cursor: pointer;              /* Canvia el cursor per indicar que és clicable */
+    padding: 12px;                /* Espai intern igual que els inputs */
+    margin-top: 20px;             /* Espai superior respecte a l’element anterior */
 }
 
 form {
-    background-color: var(--color-bg-alt);
-    padding: 2.5rem;
-    border-radius: var(--border-radius);
-
-    width: 100%;
-    max-width: 450px;
-    margin-bottom: 1.5rem;
-    border: 1px solid var(--color-border);
+    background-color: var(--color-bg-alt); /* Color de fons diferent del general */
+    padding: 2.5rem;                      /* Espai intern del formulari */
+    border-radius: var(--border-radius);   /* Arrodoneix cantonades */
+    width: 100%;                           /* Amplada completa */
+    max-width: 450px;                      /* Amplada màxima per no estirar massa */
+    margin-bottom: 1.5rem;                 /* Espai inferior respecte altres elements */
+    border: 1px solid var(--color-border); /* Línia fina al voltant */
 }
 
+/* ========================================
+    RESPONSIVE
+   ======================================== */
 @media (max-width: 768px) {
     .suggestion-section {
-        flex-direction: column;
-        gap: 1.5rem;
+        flex-direction: column;  /* Canvia la disposició a vertical en pantalles petites */
+        gap: 1.5rem;             /* Redueix el gap entre elements */
     }
     
     .suggestion-image {
-        width: 100%;
-        min-width: unset;
+        width: 100%;             /* La imatge ocupa tota l’amplada */
+        min-width: unset;        /* Elimina la amplada mínima per adaptar-se a pantalles petites */
     }
     
     form {
-        max-width: 100%;
-        min-width: unset;
+        max-width: 100%;         /* El formulari ocupa tota l’amplada disponible */
+        min-width: unset;        /* Elimina la amplada mínima per adaptar-se a mòbils */
     }
 }

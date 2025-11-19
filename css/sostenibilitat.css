@@ -1,9 +1,11 @@
+/* Centrar text dins de totes les seccions */
 section {
-    text-align: center;      
-    
-    img {
-        display: block;
-        margin: 0 auto;
-        border-radius: 10px;
-    }
+    text-align: center;
+}
+
+/* Centrar i donar radi de cantonades a les imatges dins de sections */
+section img {
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
 }

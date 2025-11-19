@@ -1,116 +1,91 @@
+/* ========================================
+    TÍTOL PRINCIPAL
+   ======================================== */
 #h1_digi {
-    color: var(--color-primary);
-    text-align: center;
-    
+    color: var(--color-primary); /* Aplica el color principal definit a :root */
+    text-align: center;           /* Centra el text horitzontalment */
 }
 
-/* #nav_digi {
-    display: flex;
-    justify-content: space-around;
-
-    a {
-        color: var(--color-primary);
-
-        &:hover {
-            background-color: white;
-            color: var(--color-accent);
-        }
-    }
-}
-
-.dropdown {
-    position: relative;
-    display: inline-block;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 300px;
-}
-
-.dropdown-content a {
-    padding: 12px 16px;
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
-hr {
-margin-bottom: 25px;
-} */
-
+/* ========================================
+    LAYOUT DE LA SECCIÓ DE CONTACTE
+   ======================================== */
 .contact-section {
-    display: flex;
-    gap: 2rem;
-    margin-bottom: 2rem;
+    display: flex;       /* Col·loca els elements (imatge i formulari) en línia */
+    gap: 2rem;           /* Espai entre els elements */
+    margin-bottom: 2rem; /* Separació amb la següent secció */
 }
 
+/* ========================================
+    IMATGE DE CONTACTE
+   ======================================== */
 .contact-image {
-    flex: 1;
+    flex: 1; /* L’element ocupa una proporció igual a la del formulari */
 }
 
 .contact-image img {
-    width: 100%;
-    height: auto;
-    border-radius: var(--border-radius);
-    object-fit: cover;
+    width: 100%;                    /* L’amplada de la imatge ocupa tot l’espai del contenedor */
+    height: auto;                   /* Manté les proporcions */
+    border-radius: var(--border-radius); /* Cantonades rodones */
+    object-fit: cover;              /* La imatge es recorta per omplir l’espai sense deformar-se */
 }
 
+/* ========================================
+    FORMULARI
+   ======================================== */
 form {
-    flex: 1;
-    min-width: 50%;
+    flex: 1;                   /* Ocupa la mateixa proporció que la imatge */
+    min-width: 50%;             /* Amplada mínima del 50% del contenidor */
+    background-color: var(--color-bg-alt); /* Fons alternatiu per diferenciar-lo */
+    padding: 2.5rem;            /* Espai interior */
+    border-radius: var(--border-radius); /* Cantonades rodones */
+    width: 100%;                /* Amplada 100% del flex item */
+    max-width: 450px;           /* Amplada màxima per evitar formularis molt grans */
+    margin-bottom: 1.5rem;      /* Espai inferior amb la següent secció */
+    border: 1px solid var(--color-border); /* Borde lleuger */
 }
 
+/* Cada div dins del formulari */
 form > div {
-    display: flex;
-    flex-direction: column;
-    gap: 4px;
+    display: flex;            /* Layout flexible */
+    flex-direction: column;   /* Elements verticals */
+    gap: 4px;                 /* Espai entre label i input */
 }
 
+/* Labels dins del formulari */
 label {
-    text-align: left;
+    text-align: left; /* Alinea el text a l’esquerra */
 }
 
+/* Inputs, textarea i botó */
 input, textarea, button {
-    width: 100%;
-    border-radius: 5px;
-    border-width: 1px;
-    padding: 12px;
-    font-size: 16px;
+    width: 100%;          /* Ocupa tot l’ample del formulari */
+    border-radius: 5px;   /* Cantonades lleugerament rodones */
+    border-width: 1px;    /* Borde fi */
+    padding: 12px;        /* Espai interior */
+    font-size: 16px;      /* Tamany del text */
 }
 
+/* Botó específicament */
 button {
-    cursor: pointer;
-    padding: 12px;
-    margin-top: 20px;
+    cursor: pointer;      /* Canvia el cursor al passar sobre ell */
+    padding: 12px;        /* Espai interior */
+    margin-top: 20px;     /* Espai superior respecte als inputs */
 }
 
-form {
-    background-color: var(--color-bg-alt);
-    padding: 2.5rem;
-    border-radius: var(--border-radius);
-
-    width: 100%;
-    max-width: 450px;
-    margin-bottom: 1.5rem;
-    border: 1px solid var(--color-border);
-}
-
-
+/* ========================================
+    RESPONSIVE / PANTALLES PETITES
+   ======================================== */
 @media (max-width: 768px) {
     .contact-section {
-        flex-direction: column;
-        gap: 1.5rem;
+        flex-direction: column; /* Canvia layout a columna */
+        gap: 1.5rem;            /* Menor espai entre elements */
     }
     
     .contact-image {
-        width: 100%;
+        width: 100%; /* La imatge ocupa tot l’ample */
     }
     
     form {
-        max-width: 100%;
+        max-width: 100%; /* Formulari ocupa tot l’ample disponible */
     }
 }

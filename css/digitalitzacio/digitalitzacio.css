@@ -1,47 +1,4 @@
 #h1_digi {
-    color: var(--color-primary);
-    text-align: center;
-    
+    color: var(--color-primary); /* Aplica el color principal definit a les variables globals a aquest element h1 amb id h1_digi */
+    text-align: center;           /* Centra el text horitzontalment dins del seu contenidor */
 }
-
-/* #nav_digi {
-    display: flex;
-    justify-content: space-around;
-
-    a {
-        color: var(--color-primary);
-
-        &:hover {
-            background-color: white;
-            color: var(--color-accent);
-        }
-    }
-}
-
-.dropdown {
-    position: relative;
-    display: inline-block;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 300px;
-}
-
-.dropdown-content a {
-    padding: 12px 16px;
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
-hr {
-margin-bottom: 25px;
-}
-
-#avantatges ul{
-    list-style-position: inside;
-} */
