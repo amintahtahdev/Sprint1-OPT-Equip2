@@ -197,3 +197,25 @@
         padding: 1rem;
     }
 }
+
+/* ========================================
+   ICONOS DE CONTACTE
+   ======================================== */
+
+.contact-icon {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 0.5rem;
+    color: var(--color-accent);
+    flex-shrink: 0;
+}
+
+.empresa-contacte p {
+    display: flex;
+    align-items: center;
+    margin: 0.25rem 0;
+    font-size: 0.9rem;
+    color: #666;
+    line-height: 1.4;
+}
+
