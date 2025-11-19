@@ -1,15 +1,22 @@
+/* ========================================
+    Botons de navegació amb fletxa
+   ======================================== */
 .chevron {
-    cursor: pointer;
-    padding: 0.5rem;
-    margin: 1rem;
-    border-radius: 50%;
+    cursor: pointer;              /* Canvia el cursor a pointer quan es passa per sobre, indicant que és clicable */
+    padding: 0.5rem;              /* Espai interior al voltant de la fletxa */
+    margin: 1rem;                 /* Marges al voltant de l'element */
+    border-radius: 50%;           /* Fa que el botó sigui rodó */
 }
 
+/* Estil quan l'usuari passa el cursor per sobre del botó */
 .chevron:hover {
-    background-color: rgba(151, 151, 151, 0.589);
+    background-color: rgba(151, 151, 151, 0.589); /* Fons semitransparent gris per efecte hover */
 }
 
+/* ========================================
+    Contingut principal (main)
+   ======================================== */
 main {
-    display: flex;
-    flex-direction: column;
+    display: flex;                 /* Converteix main en un contenidor flexible */
+    flex-direction: column;        /* Organitza els fills verticalment */
 }

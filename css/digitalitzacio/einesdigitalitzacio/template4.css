@@ -1,105 +1,124 @@
+/* ========================================
+    Bloc general de la pàgina
+   ======================================== */
 .block-page {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+    display: flex;                  /* Contenidor flexible */
+    flex-direction: row;            /* Elements col·locats horitzontalment */
+    align-items: center;            /* Centrat vertical dels fills */
 }
 
+/* Contingut principal dins del bloc */
 .block-main {
-    display: flex;
-    flex-direction: column;
+    display: flex;                  /* Flexible */
+    flex-direction: column;         /* Elements apilats verticalment */
 }
 
+/* Contingut superior del bloc */
 .block-content-dalt {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 2rem;
-    height: 150px;
+    display: flex;                  /* Flexible */
+    flex-direction: row;            /* Elements horitzontals */
+    align-items: center;            /* Centrat vertical dels fills */
+    gap: 2rem;                      /* Espai entre elements */
+    height: 150px;                  /* Altura fixa del contenidor */
 }
 
-.block-content-dalt p{
-    background-color: #f5eee8;
-    font-size: small;
-    line-height: 2rem;
-    margin: 0;
-    padding-top: 1rem;
-    padding-bottom: 0.8rem;
-    padding-left: 1rem;
-    padding-right: 0.5rem;
+/* Paràgrafs dins del contingut superior */
+.block-content-dalt p {
+    background-color: #f5eee8;      /* Fons clar per destacar el text */
+    font-size: small;               /* Text petit */
+    line-height: 2rem;              /* Altura de línia més gran per llegibilitat */
+    margin: 0;                      /* Treu marges per defecte */
+    padding-top: 1rem;              /* Espai superior dins del paràgraf */
+    padding-bottom: 0.8rem;         /* Espai inferior dins del paràgraf */
+    padding-left: 1rem;             /* Espai interior a l’esquerra */
+    padding-right: 0.5rem;          /* Espai interior a la dreta */
 }
 
+/* Contingut inferior del bloc */
 .block-content-baix {
-    display: flex;
-    flex-direction: row;
-    gap: 3rem;
-    text-align: justify;
+    display: flex;                  /* Flexible */
+    flex-direction: row;            /* Elements horitzontals */
+    gap: 3rem;                      /* Espai entre elements */
+    text-align: justify;            /* Text justificat */
 }
 
+/* Línia separadora dins del contingut inferior */
 .block-content-baix hr {
-    background-color: #c7a27d;
-    width: 5px;
-    opacity: 50%;
+    background-color: #c7a27d;      /* Color de la línia */
+    width: 5px;                      /* Amplada de la línia */
+    opacity: 50%;                    /* Semi-transparència */
 }
 
+/* Bloc esquerre del contingut inferior */
 .content-iz {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
+    display: flex;                  /* Flexible */
+    flex-direction: column;         /* Elements apilats verticalment */
+    width: 100%;                     /* Amplada completa del bloc */
 }
 
+/* Títol del bloc esquerre */
 .content-iz-title {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
+    display: flex;                  /* Flexible */
+    flex-direction: row;            /* Elements horitzontals */
+    justify-content: center;        /* Centrat horitzontal */
+    align-items: center;            /* Centrat vertical */
+    gap: 2rem;                      /* Espai entre elements */
 }
 
+/* Paràgrafs dins del títol del bloc esquerre */
 .content-iz-title p {
-    margin: 0;
+    margin: 0;                      /* Treu marges per defecte */
 }
 
+/* Contingut de cada element dins del bloc esquerre */
 .content-iz-t {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 2rem;
+    display: flex;                  /* Flexible */
+    flex-direction: row;            /* Elements horitzontals */
+    align-items: center;            /* Centrat vertical */
+    gap: 2rem;                      /* Espai entre elements */
 }
 
-.content-iz-t h5{
-    font-size: xx-large;
-    margin: 0;
+/* H5 dins del bloc esquerre */
+.content-iz-t h5 {
+    font-size: xx-large;            /* Mida molt gran per destacar */
+    margin: 0;                      /* Treu marges per defecte */
 }
 
-.content-iz-t p{
-    margin: 1rem;
+/* Paràgrafs dins de cada element del bloc esquerre */
+.content-iz-t p {
+    margin: 1rem;                   /* Espai al voltant del text */
 }
 
+/* Bloc dret del contingut inferior */
 .content-de {
-    display: flex;
-    flex-direction: column;
-    width: 80%;
+    display: flex;                  /* Flexible */
+    flex-direction: column;         /* Elements apilats verticalment */
+    width: 80%;                     /* Amplada del bloc dret */
 }
 
+/* Títol del bloc dret */
 .content-de-title {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
+    display: flex;                  /* Flexible */
+    flex-direction: row;            /* Elements horitzontals */
+    justify-content: center;        /* Centrat horitzontal */
+    align-items: center;            /* Centrat vertical */
+    gap: 2rem;                      /* Espai entre elements */
 }
 
+/* Paràgrafs dins del títol del bloc dret */
 .content-de-title p {
-    margin: 0;
+    margin: 0;                      /* Treu marges per defecte */
 }
 
+/* Contingut de cada element dins del bloc dret */
 .content-de-t {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 2rem;
+    display: flex;                  /* Flexible */
+    flex-direction: row;            /* Elements horitzontals */
+    align-items: center;            /* Centrat vertical */
+    gap: 2rem;                      /* Espai entre elements */
 }
 
-.content-de-t p{
-    margin: 1rem;
+/* Paràgrafs dins de cada element del bloc dret */
+.content-de-t p {
+    margin: 1rem;                   /* Espai al voltant del text */
 }

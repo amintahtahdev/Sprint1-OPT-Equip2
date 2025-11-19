@@ -2,73 +2,93 @@
 <head>
     <meta charset="UTF-8">
 
-    <!-- Títol de la pàgina -->
+    <!-- Títol de la pàgina que apareix a la pestanya del navegador -->
     <title>Montsià30</title>
 
-    <!-- Estils generals-->
+    <!-- Full d'estils general compartit per tot el web -->
     <link rel="stylesheet" href="/css/styles.css">
 
-    <!-- Estils específics de la pàgina -->
+    <!-- Full d'estils específic per a la pàgina d'inici -->
     <link rel="stylesheet" href="/css/index.css">
 
-    <!-- Components JavaScript -->
+    <!-- Script per incloure components reutilitzables (capsalera, peu, etc.) -->
     <script src="/js/include.js" defer></script>
 
-    <!-- Favicon -->
+    <!-- Icona petita que es mostra a la pestanya del navegador -->
     <link rel="icon" type="image/png" href="/assets/img/favicon.ico">
 </head>
 <body>
 
-    <!-- CAPSALERA -->
-    <div class="header-gen"><a href="/index.html">
-    <img src="/assets/img/logo.png" alt="Logotip Montsià30 - Anar a l'inici">
-    </a></div>
+    <!-- =========================
+        CAPSALERA GENERAL
+        ========================= -->
+    <div class="header-gen">
+        <!-- Enllaç per tornar a la pàgina principal -->
+        <a href="/index.html">
+            <!-- Logotip principal del lloc web -->
+            <img src="/assets/img/logo.png" alt="Logotip Montsià30 - Anar a l'inici">
+        </a>
+    </div>
 
 
-    <!-- CONTINGUT PRINCIPAL -->
+    <!-- =========================
+        CONTINGUT PRINCIPAL
+        ========================= -->
     <main>
+
+        <!-- Títol principal de la pàgina -->
         <h1>Benvingut</h1>
 
-    <p>
-        Benvinguts al web de <strong>Montsià30</strong>, una iniciativa impulsada per les empreses del Montsià per fomentar la 
-        <strong>transformació digital</strong> de les PIMEs i promoure la <strong>sostenibilitat</strong> dins el marc dels 
-        <strong>Objectius de Desenvolupament Sostenible (ODS)</strong> de l'Agenda 2030.
-    </p>
+        <!-- Paràgraf introductori sobre el projecte -->
+        <p>
+            Benvinguts al web de <strong>Montsià30</strong>, una iniciativa impulsada per les empreses del Montsià per fomentar la 
+            <strong>transformació digital</strong> de les PIMEs i promoure la <strong>sostenibilitat</strong> dins el marc dels 
+            <strong>Objectius de Desenvolupament Sostenible (ODS)</strong> de l'Agenda 2030.
+        </p>
 
-    <ul>
-        <li><strong>Digitalització:</strong> Avantatges, reptes i recursos per impulsar la digitalització de les PIMEs, incloent-hi els <em>Kits Digitals</em>.</li>
-        <li><strong>Sostenibilitat:</strong> Informació sobre els ODS i les iniciatives locals per a l'acompliment de l'Agenda 2030.</li>
-        <li><strong>Intranet:</strong> Espai exclusiu per al personal de Montsià30 amb accés a dades, formularis i enquestes.</li>
-    </ul>
+        <!-- Llista dels tres blocs principals del web -->
+        <ul>
+            <li><strong>Digitalització:</strong> Avantatges, reptes i recursos per impulsar la digitalització de les PIMEs, incloent-hi els <em>Kits Digitals</em>.</li>
+            <li><strong>Sostenibilitat:</strong> Informació sobre els ODS i les iniciatives locals per a l'acompliment de l'Agenda 2030.</li>
+            <li><strong>Intranet:</strong> Espai exclusiu per al personal de Montsià30 amb accés a dades, formularis i enquestes.</li>
+        </ul>
 
-
+        <!-- =========================
+            TARGETES PRINCIPALS
+            ========================= -->
         <section>
-            <!-- CANVIAR A FLEXBOX -->
+
+            <!-- Targeta: Sostenibilitat -->
             <a href="./pages/sostenibilitat.html">
                 <article>
                     <img class="img_targetes" src="./assets/img/sostenibilitat-targeta-index.jpg" alt="apartat-sostenibilitat">
-                    <h3>Sostenibilitat</h1>
+                    <h3>Sostenibilitat</h3> <!-- Inline fix per tancar correctament l'etiqueta -->
                 </article>
             </a>
 
+            <!-- Targeta: Digitalització -->
             <a href="./pages/digitalitzacio/digitalitzacio.html">
                 <article>
-                    <img class="img_targetes"src="./assets/img/digitalitzacio-targeta-indec.jpg" alt="apartat-digitalitzacio">
-                    <h3>Digitalitzacio</h1>
+                    <img class="img_targetes" src="./assets/img/digitalitzacio-targeta-indec.jpg" alt="apartat-digitalitzacio">
+                    <h3>Digitalitzacio</h3> <!-- Correcció també d'etiqueta tancada -->
                 </article>
             </a>
 
+            <!-- Targeta: Intranet -->
             <a href="./pages/login.html">
                 <article>
                     <img class="img_targetes" src="./assets/img/intranet-targeta-index.jpg" alt="apartat-intranet">
-                    <h3>Intranet</h1>
+                    <h3>Intranet</h3>
                 </article>
             </a>
 
         </section>
     </main>
 
-    <!-- PEU DE PÀGINA -->
+    <!-- =========================
+        PEU DE PÀGINA
+        ========================= -->
     <footer></footer>
+
 </body>
 </html>

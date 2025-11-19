@@ -1,62 +1,78 @@
-
+/* ========================================
+    Contenidor general de la pàgina
+   ======================================== */
 .block-page {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+    display: flex;                  /* Converteix el contenidor en flexible */
+    flex-direction: row;            /* Organitza els fills horitzontalment */
+    align-items: center;            /* Centra verticalment els elements fills */
 }
 
-.block-main{
-    display: flex;
-    flex-direction: column;
+/* Contingut principal dins de la pàgina */
+.block-main {
+    display: flex;                  /* Flexible */
+    flex-direction: column;         /* Organitza verticalment els fills */
 }
 
+/* Contenidor de blocs de contingut (esquerra i dreta) */
 .block-content {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: stretch;
-    gap: 3rem;
-    height: 100%;
+    display: flex;                  /* Flexible */
+    flex-direction: row;            /* Organitza els fills horitzontalment */
+    justify-content: center;        /* Centra horitzontalment els fills dins del contenidor */
+    align-items: stretch;           /* Estira els fills per igualar l’alçada */
+    gap: 3rem;                      /* Espai entre els fills */
+    height: 100%;                   /* Ocupa tota l’alçada del contenidor pare */
 }
 
+/* ========================================
+    Bloc esquerra
+   ======================================== */
 .block-iz {
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-    height: 100%;
+    display: flex;                  /* Flexible */
+    flex-direction: column;         /* Organitza verticalment els fills */
+    width: 50%;                      /* Ocupa la meitat de l’amplada del contenidor */
+    height: 100%;                   /* Ocupa tota l’alçada disponible */
 }
 
+/* Contingut dins del bloc esquerra */
 .block-iz .content {
-    font-size: medium;
+    font-size: medium;              /* Mida de font mitjana */
 }
 
+/* Imatges dins del bloc esquerra */
 .block-iz img {
-    margin-top: 2.5rem;
-    width: 100%;
+    margin-top: 2.5rem;             /* Marges superiors per separar de contingut superior */
+    width: 100%;                     /* Amplada completa del bloc */
 }
 
+/* ========================================
+    Bloc dreta
+   ======================================== */
 .block-de {
-    display: flex;
-    flex-direction: column;
-    width: 85%;
-    height: 100%;
+    display: flex;                  /* Flexible */
+    flex-direction: column;         /* Organitza verticalment els fills */
+    width: 85%;                     /* Amplada del bloc, més gran que l’esquerra */
+    height: 100%;                   /* Ocupa tota l’alçada disponible */
 }
 
+/* Contingut dins del bloc dreta */
 .block-de .content {
-    font-size: small;
+    font-size: small;               /* Mida de font petita */
 }
 
+/* Imatges dins del bloc dreta */
 .block-de img {
-    width: 100%;
-    height: 30%;
+    width: 100%;                     /* Amplada completa */
+    height: 30%;                     /* Altura proporcional al bloc */
 }
 
+/* Contingut general dins qualsevol bloc */
 .content {
-    display: flex;
-    flex-direction: column;
+    display: flex;                  /* Flexible */
+    flex-direction: column;         /* Organitza verticalment els fills */
 }
 
+/* Paràgraf destacat dins de la dreta? */
 .p-de {
-    background-color: #f5eee8;
-    padding: 1rem;
+    background-color: #f5eee8;      /* Fons clar per destacar */
+    padding: 1rem;                  /* Espai interior per separar contingut del fons */
 }
