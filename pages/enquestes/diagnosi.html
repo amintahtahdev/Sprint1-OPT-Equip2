@@ -1,0 +1,147 @@
+<html lang="cat">
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Títol de la pàgina que apareix a la pestanya del navegador -->
+    <title>Montsià30</title>
+
+    <!-- Full d'estils general compartit per tot el web -->
+    <link rel="stylesheet" href="/css/styles.css">
+
+    <!-- Full d'estils específic per a la pàgina d'inici -->
+    <link rel="stylesheet" href="/css/enquestes/diagnosi.css">
+
+    <!-- Script per incloure components reutilitzables (capsalera, peu, etc.) -->
+    <script src="/js/include.js" defer></script>
+
+    <!-- Script per a la funcionalitat de l'enquesta de diagnosi -->
+    <script src="/js/enviament-enquesta.js" defer></script>
+
+    <!-- Icona petita que es mostra a la pestanya del navegador -->
+    <link rel="icon" type="image/png" href="/assets/img/favicon.ico">
+</head>
+<body>
+
+    <!-- =========================
+        CAPSALERA GENERAL
+        ========================= -->
+    <div class="header-gen">
+        <!-- Enllaç per tornar a la pàgina principal -->
+        <a href="/index.html">
+            <!-- Logotip principal del lloc web -->
+            <img src="/assets/img/logo.png" alt="Logotip Montsià30 - Anar a l'inici">
+        </a>
+    </div>
+
+
+    <!-- =========================
+        CONTINGUT PRINCIPAL
+        ========================= -->
+    <main>
+
+        <!-- Títol principal de la pàgina -->
+        <h1>Enquesta de diagnosi</h1>
+        <form class="enquesta-form">
+            <div class="enquesta-columnes">
+                <!-- Columna 1 -->
+                <div class="enquesta-columna">
+                    <div class="form-group">
+                        <label>Què comercialitza la vostra empresa?</label><br>
+                        <input type="radio" id="productes" name="comercialitza" value="Productes">
+                        <label for="productes">Productes</label>
+                        <input type="radio" id="serveis" name="comercialitza" value="Serveis">
+                        <label for="serveis">Serveis</label>
+                        <input type="radio" id="productes_serveis" name="comercialitza" value="Productes i serveis">
+                        <label for="productes_serveis">Productes i serveis</label>
+                    </div>
+                    <div class="form-group">
+                        <label for="sector">Indiqueu el vostre sector principal</label><br>
+                        <select id="sector" name="sector">
+                            <option value="" selected disabled hidden>Selecciona una opció</option>
+                            <option>Salut, higiene i bellesa</option>
+                            <option>Alimentació</option>
+                            <option>Tecnologia</option>
+                            <option>Educació</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="activitat">Indiqueu la vostra activitat principal</label><br>
+                        <input type="text" id="activitat" name="activitat" value="" placeholder="Ex: Farmàcia i parafarmàcia">
+                    </div>
+                    <div class="form-group">
+                        <label>Teniu algun establiment obert al públic?</label><br>
+                        <input type="radio" id="estab_s" name="estabert" value="Sí">
+                        <label for="estab_s">Sí</label>
+                        <input type="radio" id="estab_n" name="estabert" value="No">
+                        <label for="estab_n">No</label>
+                    </div>
+                    <div class="form-group">
+                        <label for="numestab">Indiqueu el número d’establiments</label><br>
+                        <select id="numestab" name="numestab">
+                            <option value="" selected disabled hidden>Selecciona una opció</option>
+                            <option>1</option>
+                            <option>Entre 2 i 5</option>
+                            <option>Entre 6 i 20</option>
+                            <option>Més de 20</option>
+                        </select>
+                    </div>
+                </div>
+                <!-- Columna 2 -->
+                <div class="enquesta-columna">
+                    <div class="form-group">
+                        <label>Teniu establiments fora de l'Estat espanyol?</label><br>
+                        <input type="radio" id="fora_s" name="foraesp" value="Sí">
+                        <label for="fora_s">Sí</label>
+                        <input type="radio" id="fora_n" name="foraesp" value="No">
+                        <label for="fora_n">No</label>
+                    </div>
+                    <div class="form-group">
+                        <label>Algun dels establiments està localitzat dins d’un mercat municipal?</label><br>
+                        <input type="radio" id="mercat_s" name="mercat" value="Sí">
+                        <label for="mercat_s">Sí</label>
+                        <input type="radio" id="mercat_n" name="mercat" value="No">
+                        <label for="mercat_n">No</label>
+                    </div>
+                    <div class="form-group">
+                        <label>Algun dels establiments és d’una xarxa de franquícies?</label><br>
+                        <input type="radio" id="franquicia_s" name="franquicia" value="Sí">
+                        <label for="franquicia_s">Sí</label>
+                        <input type="radio" id="franquicia_n" name="franquicia" value="No">
+                        <label for="franquicia_n">No</label>
+                    </div>
+                    <div class="form-group">
+                        <label for="treballadors">Quin és el nombre de treballadors de l’empresa (incloent-vos a vosaltres mateixos)?</label><br>
+                        <select id="treballadors" name="treballadors">
+                            <option value="" selected disabled hidden>Selecciona una opció</option>
+                            <option>1</option>
+                            <option>Entre 2 i 9</option>
+                            <option>Entre 10 i 49</option>
+                            <option>Entre 50 i 249</option>
+                            <option>250 treballadors o més</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="facturacio">Quin és el volum de facturació anual de l’empresa?</label><br>
+                        <select id="facturacio" name="facturacio">
+                            <option value="" selected disabled hidden>Selecciona una opció</option>
+                            <option>Menys de 250 mil euros</option>
+                            <option>Més de 250 mil fins a 2 milions d’euros</option>
+                            <option>Més de 2 milions fins a 10 milions d’euros</option>
+                            <option>Més de 10 milions d’euros</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="enquesta-button-container">
+                <button type="submit">Enviar</button>
+            </div>
+        </form>
+    </main>
+
+    <!-- =========================
+        PEU DE PÀGINA
+        ========================= -->
+    <footer></footer>
+
+</body>
+</html>
