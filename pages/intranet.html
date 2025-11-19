@@ -54,7 +54,7 @@
                         </div>
                     </div>
                     <div class="empresa-actions">
-                        <a href="/pages/formularis.html?empresa=restaurant-delta" class="btn-formulari">Accedir als formularis</a>
+                        <p class="text-no-enquestes">No hi han enquestes disponibles</p>
                     </div>
                 </div>
 
@@ -65,7 +65,7 @@
                         <span class="sector-badge">Comerç</span>
                     </div>
                     <div class="empresa-info">
-                        <p class="empresa-desc">Productes locals i artesanals del territori</p>
+                        <p class="empresa-desc">Productes locals i artesania del territori</p>
                         <div class="empresa-contacte">
                             <p>
                                 <svg class="contact-icon" width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
@@ -88,7 +88,17 @@
                         </div>
                     </div>
                     <div class="empresa-actions">
-                        <a href="/pages/formularis.html?empresa=botiga-montsia" class="btn-formulari">Accedir als formularis</a>
+                        <button class="btn-formulari" onclick="toggleFormularis('botiga-montsia')">
+                            Accedir als formularis
+                        </button>
+                        <div id="formularis-botiga-montsia" class="desplegable-formularis">
+                            <ul class="lista-formularis">
+                                <li><a href="#" target="_blank">Auto Diagnosi</a></li>
+                                <li><a href="#">Enquesta de Satisfacció Client</a></li>
+                                <li><a href="#">Control d'Inventari</a></li>
+                                <li><a href="#">Anàlisi de Vendes</a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
 
@@ -122,7 +132,7 @@
                         </div>
                     </div>
                     <div class="empresa-actions">
-                        <a href="/pages/formularis.html?empresa=montsitech" class="btn-formulari">Accedir als formularis</a>
+                        <p class="text-no-enquestes">No hi han enquestes disponibles</p>
                     </div>
                 </div>
 
@@ -156,7 +166,7 @@
                         </div>
                     </div>
                     <div class="empresa-actions">
-                        <a href="/pages/formularis.html?empresa=fruites-delta" class="btn-formulari">Accedir als formularis</a>
+                        <p class="text-no-enquestes">No hi han enquestes disponibles</p>
                     </div>
                 </div>
 
@@ -190,7 +200,7 @@
                         </div>
                     </div>
                     <div class="empresa-actions">
-                        <a href="/pages/formularis.html?empresa=cafe-central" class="btn-formulari">Accedir als formularis</a>
+                        <p class="text-no-enquestes">No hi han enquestes disponibles</p>
                     </div>
                 </div>
 
@@ -224,7 +234,17 @@
                         </div>
                     </div>
                     <div class="empresa-actions">
-                        <a href="/pages/formularis.html?empresa=supermercat-ebre" class="btn-formulari">Accedir als formularis</a>
+                        <button class="btn-formulari" onclick="toggleFormularis('supermercat-ebre')">
+                            Accedir als formularis
+                        </button>
+                        <div id="formularis-supermercat-ebre" class="desplegable-formularis">
+                            <ul class="lista-formularis">
+                                <li><a href="#" target="_blank">Auto Diagnosi</a></li>
+                                <li><a href="#">Enquesta de Qualitat Producte</a></li>
+                                <li><a href="#">Gestió de Proveïdors</a></li>
+                                <li><a href="#">Control de Preus</a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -248,5 +268,25 @@
     </main>
 
     <footer></footer>
+
+    <script>
+    function toggleFormularis(empresaId) {
+        const desplegable = document.getElementById(`formularis-${empresaId}`);
+        desplegable.classList.toggle('mostrar');
+    }
+
+    function tancarDesplegables() {
+        document.querySelectorAll('.desplegable-formularis').forEach(desplegable => {
+            desplegable.classList.remove('mostrar');
+        });
+    }
+
+    // Tancar desplegables en fer clic fora
+    document.addEventListener('click', function(event) {
+        if (!event.target.closest('.empresa-actions')) {
+            tancarDesplegables();
+        }
+    });
+    </script>
 </body>
 </html>
