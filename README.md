@@ -31,8 +31,8 @@ El projecte es troba en la seva primera versió funcional. En aquest sprint s’
 * Carrusel funcional amb el contingut de la *Guia de suport a la digitalització del comerç i mercat Amposta (2024)*.
 * Formularis base per a:
 
-  * Sol·licitar més informació.
   * Fer suggeriments.
+  * Contactar-nos.
 
 ### ✔️ Intranet – Versió inicial
 
@@ -47,10 +47,10 @@ El projecte es troba en la seva primera versió funcional. En aquest sprint s’
 
 * **HTML semàntic**
 * **CSS extern** amb estils unificats
-* **JavaScript** per integrar capçalera, peu i contingut dinàmic
+* **JavaScript** per integrar capçalera, peu.
 * **Visual Studio Code** (IDE)
 * **GitHub** (CVS)
-* **Server**
+* **Server** ()
 
 ---
 
@@ -66,7 +66,15 @@ Aquest projecte està en desenvolupament contínu. El README s’actualitzarà a
 
 ---
 
+## Link al Github del Projecte
+
+> 📎 [Sprint1-OPT-Equip2](https://github.com/amintahtahdev/Sprint1-OPT-Equip2)
+
+---
+
 **© 2025 MontsiTech – Projecte educatiu IES Montsià**
+
+
 
 
 
