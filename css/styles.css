@@ -26,6 +26,7 @@
 /* Font base i comportament de scroll */
 html {
     font-size: 16px;
+    height: auto;
     scroll-behavior: smooth; /* Scroll suau per ancoratges */
 }
 
@@ -35,10 +36,8 @@ body {
     line-height: 1.6;
     color: var(--color-text);
     background-color: var(--color-bg);
-    min-height: 100dvh;   /* Com a MÍNIM la pantalla, però pot créixer més */
+    min-height: 100dvh; /* Mínim la pantalla */
     margin: 0;
-    display: flex;
-    flex-direction: column;
 }
 
 /* ========================================
@@ -147,12 +146,12 @@ nav a:hover {
    ======================================== */
 
 main {
-    /* Això fa la màgia: si hi ha poc text, el main s'estira per empènyer el footer avall */
-    flex: 1;
     width: 100%;
     max-width: 1300px;
     margin: 0 auto;
     padding: 1rem;
+    /* Això assegura que el contingut no desbordi en pantalles petites */
+    min-width: 0;
 }
 
 /* Titulars h1, h2, h3 dins del main */
@@ -192,7 +191,7 @@ footer {
     color: white;
     text-align: center;
     padding: 0.5rem 2rem;
-    flex-shrink: 0;       /* El footer manté la seva mida */
+    width: 100%;
 }
 
 footer p {
@@ -257,11 +256,11 @@ img {
         font-size: 14px; /* Redueix la font base */
     }
 
-    header {
+    .header-gen {  /* Canviat header per .header-gen */
         padding: 0.75rem;
     }
 
-    header img {
+    .header-gen img { /* Canviat header per .header-gen */
         height: 40px;
     }
 
