@@ -3,53 +3,60 @@
     <meta charset="UTF-8">
     <title>Registre | Montsià30</title>
     <link rel="stylesheet" href="/css/styles.css">
-    <link rel="stylesheet" href="/css/intranet.css">
+    <link rel="stylesheet" href="/css/registre.css">
     <script src="/js/include.js" defer></script>
     <link rel="icon" type="image/png" href="/assets/img/favicon.ico">
 </head>
 <body>
     
-    <div class="header-gen"><a href="/index.html">
-    <img src="/assets/img/logo.png" alt="Logotip Montsià30 - Anar a l'inici">
-    </a></div>
+    <div class="header-gen">
+        <a href="/index.html">
+            <img src="/assets/img/logo.png" alt="Logotip Montsià30 - Anar a l'inici">
+        </a>
+    </div>
 
-    <main>
-        <h1>Registre</h1>
-        <form id="formRegistre">
-            <div class="form-group">
-                <label for="nom">Nom complet:</label>
-                <input type="text" id="nom" name="nom" required>
+    <main class="registre-main">
+        <div class="registre-container">
+            <h1>Registre</h1>
+            <form class="registre-form" id="formRegistre">
+                <div class="form-group">
+                    <label for="nom" class="registre-label">Nom complet:</label>
+                    <input type="text" id="nom" name="nom" class="registre-input" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email" class="registre-label">Correu Electrònic:</label>
+                    <input type="email" id="email" name="email" class="registre-input" required>
+                    <small class="help-text">Ha de ser del domini @montsia30.net</small>
+                    <div id="error-email" class="error-message" style="display: none;"></div>
+                </div>
+
+                <div class="form-group">
+                    <label for="password" class="registre-label">Contrasenya:</label>
+                    <input type="password" id="password" name="password" class="registre-input" required>
+                    <small class="help-text">Mínim 8 caràcters, majúscules, minúscules i números</small>
+                    <div id="error-password" class="error-message" style="display: none;"></div>
+                </div>
+
+                <div class="form-group">
+                    <label for="confirmPassword" class="registre-label">Repeteix la contrasenya:</label>
+                    <input type="password" id="confirmPassword" name="confirmPassword" class="registre-input" required>
+                    <div id="error-confirm" class="error-message" style="display: none;"></div>
+                </div>
+
+                <button type="button" onclick="validarFormulari()" class="registre-button">Registra't</button>
+            </form>
+            
+            <div class="registre-links">
+                <a href="/pages/login.html">← Tornar a Iniciar Sessió</a>
             </div>
-
-            <div class="form-group">
-                <label for="email">Correu Electrònic:</label>
-                <input type="text" id="email" name="email" required>
-                <small class="help-text">Ha de ser del domini @montsia30.net</small>
-                <div id="error-email" class="error-message" style="display: none;"></div>
-            </div>
-
-            <div class="form-group">
-                <label for="password">Contrasenya:</label>
-                <input type="password" id="password" name="password" required>
-                <small class="help-text">Mínim 8 caràcters, majúscules, minúscules i números</small>
-                <div id="error-password" class="error-message" style="display: none;"></div>
-            </div>
-
-            <div class="form-group">
-                <label for="confirmPassword">Repeteix la contrasenya:</label>
-                <input type="password" id="confirmPassword" name="confirmPassword" required>
-                <div id="error-confirm" class="error-message" style="display: none;"></div>
-            </div>
-
-            <button id="btt_is" type="button" onclick="validarFormulari()">Registra't</button>
-        </form>
-        
-        <div class="intranet-links">
-            <a href="/pages/login.html">← Tornar a Iniciar Sessió</a>
         </div>
     </main>
 
-    <footer></footer>
+    <footer>
+        <p>Montsià30 | Desenvolupat per Montsílio'n<br>
+        Tel: +34 977 000 000 | Correu: info@montsia30.net | Adreça: C/ Exemple, 123. Amposta, Espanya</p>
+    </footer>
 
     <script>
     function validarFormulari() {

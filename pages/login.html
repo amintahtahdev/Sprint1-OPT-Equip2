@@ -1,43 +1,35 @@
 <html lang="cat">
 <head>
     <meta charset="UTF-8">
-
-    <!-- Títol de la pàgina -->
-    <title>Intranet | Montsià30</title>
-
-    <!-- Estils generals-->
+    <title>Login | Montsià30</title>
     <link rel="stylesheet" href="/css/styles.css">
-
-    <!-- Estils específics de la pàgina -->
-    <link rel="stylesheet" href="/css/intranet.css">
-
-    <!-- Components JavaScript -->
+    <link rel="stylesheet" href="/css/login.css">
     <script src="/js/include.js" defer></script>
-
-    <!-- Favicon -->
     <link rel="icon" type="image/png" href="/assets/img/favicon.ico">
 </head>
 <body>
     
     <!-- CAPSALERA -->
-    <div class="header-gen"><a href="/index.html">
-    <img src="/assets/img/logo.png" alt="Logotip Montsià30 - Anar a l'inici">
-    </a></div>
+    <div class="header-gen">
+        <a href="/index.html">
+            <img src="/assets/img/logo.png" alt="Logotip Montsià30 - Anar a l'inici">
+        </a>
+    </div>
 
     <!-- CONTINGUT PRINCIPAL -->
-    <main>
+    <main class="login-main">
         <h1>Iniciar Sessió</h1>
-        <form>
-            <label>Correu Electrònic:</label>
-            <input type="text">
+        <form class="login-form">
+            <label class="login-label">Correu Electrònic:</label>
+            <input type="text" class="login-input">
 
-            <label>Contrasenya:</label>
-            <input type="password">
+            <label class="login-label">Contrasenya:</label>
+            <input type="password" class="login-input">
         </form>
         <a href="/pages/intranet.html" id="btt_is">Iniciar Sessió</a>
         
         <!-- ENLLAÇ DE REGISTRE AFEGIT -->
-        <div class="intranet-links">
+        <div class="login-links">
             <a href="/pages/registre.html">No tens compte? Registra't</a>
         </div>
     </main>
