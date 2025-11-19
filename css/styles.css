@@ -35,9 +35,10 @@ body {
     line-height: 1.6;
     color: var(--color-text);
     background-color: var(--color-bg);
-    min-height: 100vh;            /* Assegura que el body ompli la pantalla */
+    min-height: 100dvh;   /* Com a MÍNIM la pantalla, però pot créixer més */
+    margin: 0;
     display: flex;
-    flex-direction: column;        /* Permet footer al final */
+    flex-direction: column;
 }
 
 /* ========================================
@@ -46,17 +47,19 @@ body {
 
 /* Header genèric amb color principal i sticky */
 .header-gen {
-    background-color: var(--color-primary);
+background-color: var(--color-primary);
     color: white;
     padding: 0.5rem 2rem;
-    position: sticky;
-    top: 0;
-    z-index: 1000; /* Sempre per sobre del contingut */
+    flex-shrink: 0;       /* Assegura que el header mai es faci petit */
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
     gap: 1rem;
+    /* Opció: Header que es queda fix a dalt però deixa que la pàgina creixi */
+    position: sticky; 
+    top: 0;
+    z-index: 1000;
 }
 
 /* Links dins del header */
@@ -144,9 +147,10 @@ nav a:hover {
    ======================================== */
 
 main {
-    flex: 1;                       /* Ocupa l'espai restant de la pàgina */
-    max-width: 1300px;
+    /* Això fa la màgia: si hi ha poc text, el main s'estira per empènyer el footer avall */
+    flex: 1;
     width: 100%;
+    max-width: 1300px;
     margin: 0 auto;
     padding: 1rem;
 }
@@ -188,7 +192,7 @@ footer {
     color: white;
     text-align: center;
     padding: 0.5rem 2rem;
-    margin-top: auto; /* Col·loca el footer al final del body */
+    flex-shrink: 0;       /* El footer manté la seva mida */
 }
 
 footer p {
