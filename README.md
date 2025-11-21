@@ -72,7 +72,13 @@ Aquest projecte està en desenvolupament contínu. El README s’actualitzarà a
 
 ---
 
+## Link al Github del Projecte
+
+> 📎 [Web accesible sols desde l'aula 21]( http://192.168.221.164/)
+
+---
 **© 2025 MontsiTech – Projecte educatiu IES Montsià**
+
 
 
 
